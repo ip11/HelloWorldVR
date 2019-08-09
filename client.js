@@ -3,6 +3,10 @@
 
 import {ReactInstance} from 'react-360-web';
 
+// Installs the Stereoscopic version of the image on phone
+import WebVRPolyfill from 'webvr-polyfill';
+const polyfill = new WebVRPolyfill();
+
 function init(bundle, parent, options = {}) {
   const r360 = new ReactInstance(bundle, parent, {
     // Add custom options here
